@@ -85,7 +85,9 @@
 
 
 
-#  Dictionary & Set in Python
+
+#Lesson-4
+#  <===============================Dictionary & Set in Python==========================>
 
 # Dictoniary are used to store data values in key:value paris.They are unordered and mutable and dont allow duplicate key:
 
@@ -132,6 +134,65 @@
 
 #SET IN PYTHON: DF
 # SET IN THE COLLECTIONS OF UNORDERED ITEMS,EACH ELEMENT IN THE SET MUST BE UNIQUE AND MUTABLE.
-# 
-#  
 
+
+set = {1,2,3,4,5,5,'Hello World','Hello World', 99.9,99.9}
+
+set2 = {9 ,7 ,8 ,10, 1} 
+
+# new = set.union(set2)
+# new =  set.intersection(set2)
+# print(new); #{1, 2, 3, 4, 5, 99.9, 'Hello World'} so the repeated values only stores onces 
+
+
+#Set Methods:   
+#     .add() -->use to add values in the set
+# .remove() --> use to remove values from the set
+# .pop()  ---> remove the reandom value
+#   .clear() --use to empites the set .
+#.union() --> combine both set values and return new 
+#.intersection() --> combine common values and return 
+
+
+
+
+#Practice Questions:
+
+words = {
+    "table" : {
+        "a peice of furtinure",
+        "list of facts and figures"
+    } ,
+    "cat" : "a small animal"
+}
+
+print(words)
+
+
+# to find the number of classes need for number of courses are avaiable:
+
+language = {
+    'python','java','C++','python','javascript','java','python','java','c++','c'
+    }
+
+print(len(language))
+
+
+
+
+# 
+marks = {}
+phy = input("Enter Physics marks:")
+
+marks.update({"phy":phy})
+
+eng = input("Enter english marks:")
+marks.update({"eng":eng})
+
+maths = int(input("Enter your maths marks:"))
+marks.update({"maths":maths})
+#Lesson-5:
+
+
+print(marks) #Ans -->{'phy': '89', 'eng': '09', 'maths': 800}
+#=======================Loops in Python:====================================>
