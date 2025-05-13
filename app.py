@@ -319,11 +319,113 @@
 # Question no : 4 Find the Length of an array:
 
 
-list = [1,2,3,4,5,6,7,8,9,10,67,23,33,12,5,4,45,56,67,878,543234,234];
+# list = [1,2,3,4,5,6,7,8,9,10,67,23,33,12,5,4,45,56,67,878,543234,234];
 
-idx = 0;
+# idx = 0;
 
-while idx <= len(list):
-    print(idx)
-    idx += 1
-print(f"Length of list is ${idx}");
+# while idx <= len(list):
+#     print(idx)
+#     idx += 1
+# print(f"Length of list is ${idx}");
+
+
+# In Python, "traverse" means to go through each item in a collection (like a list, string, tuple, dictionary, or set), usually one at a time, to read, process, or modify the elements.
+
+
+
+
+# Question no 5: Find the x number in  the tubple:
+
+
+# value = (1, 2, 3, 4, 5, 6, 7, 8, 8, 99, 565, 44, 32)
+# idx = 0
+# x = 565
+
+# while idx < len(value):
+#     if value[idx] == x:
+#         print("Found at index", idx)
+#         break
+#     idx += 1
+# else:
+#     print("Not found")
+
+
+
+
+
+# For Loops: For loops are used for sequential traversal ,like it,loop on (list,dictioniary,or anything  etc) in sequence
+
+
+
+# Question No 1 Loop on  List :
+
+# list = [1,2,3,4,5,6,7,8,9,10]
+
+
+# for item in list:
+#     print(item)
+
+
+
+
+#Question no 2: Search for a number x in tubple using For loop:
+
+
+
+# tup = (1,333,45,12,00,88,44,98,23,54,22);
+# x = 333
+# for number in tup:
+#    if number == x :
+#       print("Found")
+#    else:
+#       print("Not Found")   
+
+# Here are we are doing linear search ,like what is linar ,now look at the above code ,you see we are looking each values from o index to last ,so we are doing in line .So It's good to know about programming termonolgy.
+
+
+# Range Functions: So range function return a seqence of number ,start from 0 by default and end incremented by 1 by default and end before the specified number:the range you set ,it befores it.
+
+
+# And there are three range() parameters so,you can to define the range properly ,where you have to start your range,where to end ,and how to step your number :
+
+
+# for el in range(100,0,-1):             # 2 is start,where from the start ,100 where to end but its on before the specified number:
+
+#     print(el)
+
+
+
+
+
+# QUESTION: You can print any number with range :
+# n = int(input("Enter the input:"));
+
+# for number in range(1,11):
+#     print(n * number)
+
+
+
+
+#  *------------------Pass Statment-------------------*
+
+
+
+# Pass statemtn is used to write empty piece of code where python expects somethings in future.It work's like the empty placeHolder which do nothin,amd help aviod syntac error while writing python code .
+
+
+
+
+
+
+# Practice Questions:
+num = 5
+sum = 0
+for number in range(1,num+1):
+      sum += number
+      print(sum)
+      
+
+
+
+
+# Lecture 6 : Functions & Recursion in Python |
