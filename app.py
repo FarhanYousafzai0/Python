@@ -418,11 +418,11 @@
 
 
 # Practice Questions:
-num = 5
-sum = 0
-for number in range(1,num+1):
-      sum += number
-      print(sum)
+# num = 5
+# sum = 0
+# for number in range(1,num+1):
+#       sum += number
+#       print(sum)
       
 
 
