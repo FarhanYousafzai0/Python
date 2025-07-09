@@ -280,3 +280,190 @@
 # for key in Person:
 #     print(key, ": ",Person[key])
 # print(Person)
+
+
+
+# i = 100
+
+# while i >= 1:
+#     print(i)
+#     i -= 1
+
+
+# print("Loop Finished!")
+
+
+
+
+#---------------Build Guesing Game------------#
+
+
+# secret_word = "Boss"
+# guess = ""
+# guess_count = 0
+# guess_limit = 3
+# out_of_guess = False
+
+
+
+# difficulty = input("Choose difficulty (easy/hard): ").lower()
+
+
+# if difficulty == "easy":
+#     guess_limit = 5
+# elif difficulty == "midium":
+#     guess_limit = 3
+# else:
+#     print("Invalied difficulty Level:")        
+
+# while guess != secret_word and not out_of_guess:
+#     if guess_count < guess_limit:
+#         guess = input("Enter Guess: ")
+#         guess_count += 1
+#     else:
+#         out_of_guess = True  
+
+
+# if out_of_guess:
+#     print("❌ You lose the game! Try again.")
+# else:
+#     print("✅ You win, Boss!")
+
+
+
+
+
+#-----------------For Loops-------
+
+
+
+# friends = ["Haseeb","ALi","Musa","Hamza"]
+
+# for index in range(len(friends)):
+#     print(friends[index])
+
+
+
+#---------------exponent Functions----------#
+
+
+
+# Base = float(input("Enter Base Number :"))
+# Power = float(input("Enter Power Number :"))
+
+
+
+# result = pow(Base,Power)
+# print(result)
+
+
+
+# 
+
+
+
+# def raise_to_power(base_num, power_num):
+#     result = 1
+#     for index in range(power_num):
+#         result = result * base_num  # Multiply again and again
+#     return result  # ✅ Return after loop ends
+
+# print(raise_to_power(3, 4))  # Output: 81
+
+
+
+
+# _-------------------2D Lists-------------#
+
+# A 2D list is simply list ,including another list .Known as 2 Dimensional List.
+
+# number_grid = [
+
+#     [1,2,3,4],
+#     [5,6,7,8],
+#     [9,10,11,12],
+#     [0]
+# ]
+
+
+# for row in number_grid:
+#         for num in row:
+#                 print(num)
+
+
+
+# names = [
+#     ["Ali", "Hamza", "Sara"],
+#     ["Farhan", "Haseeb", "Musa"],
+#     ["Usman", "Sana", "Amna"]
+# ]
+
+
+# print(names[2][1])
+# print(names[2])
+
+# for name in names:
+#     for each in name:
+#         print(each)
+
+
+
+
+# grades = [
+#     ["Farhan", 90],
+#     ["Ali", 85],
+#     ["Musa", 78],
+#     ["Eren", 10],
+#     ["Jin", 25],
+#     ["Puke", 33]
+# ]
+
+
+
+# for student in grades:
+#     print(f"{student[0]} scored {student[1]}")
+
+
+
+
+
+# def Translator(phrase):
+#     translattion = ""
+#     for letter in phrase:
+#         if letter in "AEIOUaeiou":
+#             translattion = translattion + "~~~~"
+#         else:
+#             translattion = translattion + letter
+#     return translattion
+
+
+# print(Translator(input("Enter a word Please :")))
+
+
+
+#---------------try......except---------#
+
+# try:
+#     num = int(input("Enter a number: "))
+#     print(100 / num)
+# except ZeroDivisionError as err:
+#     print(err)
+# except ValueError as err :
+#     print(err)    
+
+
+
+
+# try:
+#     age = int(input("Kindly, enter you age please :"))
+
+
+#     print(age)
+
+# except ValueError as err:
+#     print(err)
+
+import pyjokes
+
+print("Here's a random dev joke, Boss:")
+print(pyjokes.get_joke())
